@@ -1,8 +1,7 @@
 # oheenrahman.com
-# oheenrahman.github.io
 
 Welcome to the repository for my personal portfolio website — [oheenrahman.com](https://oheenrahman.com).  
-This site is designed to showcase my academic background, resume, projects, and professional presence online.
+This website was originally planned as part of my Summer 2025 **Education and Computers** course. It began as a project to refresh my web design fundamentals skills with HTML and CSS while learning how to host by myself. What started as a simple assignment will evolve into a long-term professional asset that I plan to maintain and grow throughout my academic and professional career.
 
 ## 📌 About
 
@@ -13,7 +12,7 @@ It features:
 - A downloadable resume and CV (coming soon)
 - Responsive design with HTML and CSS
 
-## 🌐 Live Website
+## 🌐 Live Website (work in progress)
 
 **🔗 [oheenrahman.com](https://oheenrahman.com)**  
 Hosted via GitHub Pages  
