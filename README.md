@@ -1,6 +1,7 @@
 # oheenrahman.com
 
 Welcome to the repository for my personal portfolio website — [oheenrahman.com](https://oheenrahman.com).  
+
 This website was originally planned as part of my Summer 2025 **Education and Computers** course. It began as a project to refresh my web design fundamentals skills with HTML and CSS while learning how to host by myself. What started as a simple assignment will evolve into a long-term professional asset that I plan to maintain and grow throughout my academic and professional career.
 
 ## 📌 About
