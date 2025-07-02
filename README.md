@@ -23,29 +23,31 @@ DNS and HTTPS powered by Cloudflare
 
 - HTML5  
 - CSS3
+- JavaScript
 - Squarespace (domain hosting, temporary)
 - GitHub Pages (static hosting)  
 - Cloudflare (DNS, SSL, and CDN)
+- Google Drive
 
 ## 📁 File Structure
 
 ```
 /
-├── index.html       # Main webpage
-├── style.css        # Styling file
-├── favicon.jpg      # Favicon for branding
-├── README.md        # This file
+├── index.html          
+├── style.css           
+├── script.js           
+├── favicon.jpg         
+├── README.md           
+└── images/             
+    ├── image.jpg         
+    ├── favicon.jpg
 ```
 
 
 ## 🧠 Future Plans
 
-- Transition domain to Cloudflare
-- Populte entirety of Resume and CV
-- Add downloadable resume and CV
-- Include sections for projects and blog posts
-- Optimize design for mobile
-- Add JavaScript enhancements
+- Optimize design for mobile  
+- Add JavaScript enhancements 
 
 ## 📫 Contact
 
@@ -53,4 +55,4 @@ Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/oheenrahm
 
 ---
 
-© 2025 Oheen Rahman. All rights reserved.
+© 2025 Oheen Rahman.
