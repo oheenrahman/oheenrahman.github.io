@@ -10,7 +10,7 @@ This portfolio highlights my experience as an Economics and Data Science student
 It features:
 - A custom personal logo
 - Embedded LinkedIn badge
-- A downloadable resume and CV (coming soon)
+- A downloadable resume and CV
 - Responsive design with HTML and CSS
 
 ## 🌐 Live Website (work in progress)
