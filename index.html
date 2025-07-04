@@ -6,7 +6,6 @@
         <title>Oheen Rahman</title>
         <link rel="icon" href="images/favicon.JPG" type="image/jpeg">
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
     </head>
 
     <body>
@@ -14,9 +13,12 @@
             <ul>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#resume">Resume</a></li>
+                <li><a href="#experience">Experiences</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#leadership">Leadership</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#résumé">Résumé</a></li>
             </ul>
         </nav>
 
@@ -38,27 +40,69 @@
 
         <section id="education">
             <h2>Education</h2>
-            <p><strong>Rutgers University, New Brunswick, NJ</strong><br>
-            B.S. in Data Science and Economics (Double Major) — Expected May 2027</p>
-            <p><strong>Relevant Coursework (Data Science):</strong> Statistics for Research, Data in Context, Data Management, Information Visualization, Machine Learning</p>
-            <p><strong>Relevant Coursework (Economics):</strong> Intro to Macroeconomics, Intro to Microeconomics, Intermediate Macroeconomics, Intermediate Microeconomics, Financial Economics, Econometrics, Forecasting & Big Data</p>
-            <p><strong>Egg Harbor Township High School</strong> — Graduated June 2023</p>
+            <p>
+                <img src="images/school/rutgers_university.svg" class="logo">
+                <strong>Rutgers University, New Brunswick, NJ</strong><br>
+                B.S. in Data Science and Economics (Double Major) — Expected May 2027
+            </p>
+            <p>
+                <strong>Relevant Coursework (Data Science):</strong> Statistics for Research, Data in Context, Data Management, Information Visualization, Machine Learning
+            </p>
+            <p>
+                <strong>Relevant Coursework (Economics):</strong> Intro to Macroeconomics, Intro to Microeconomics, Intermediate Macroeconomics, Intermediate Microeconomics, Financial Economics, Econometrics, Forecasting & Big Data
+            </p>
+            <p>
+                <img src="images/school/egg_harbor_township_high_school.png" class="logo" id="eggHarborTownshipHighSchool">
+                <strong>Egg Harbor Township High School</strong> — Graduated June 2023
+            </p>
         </section>
 
-        <section id="experience">
+        <section id="logo">
             <h2>Experience</h2>
-            <p><strong>Office Assistant – Rutgers University</strong> (Sep 2023 – Present, New Brunswick, NJ)<br>
-            Supported daily operations, managed 30+ communications/tasks, and improved filing system speed by 40%. Oversaw inventory and purchasing processes to improve efficiency.</p>
-            <p><strong>Shop from Home Clerk – Shoprite of English Creek</strong> (Jun 2021 – Sep 2021, Egg Harbor Township, NJ)<br>
-            Processed and fulfilled online orders, served 50+ customers daily, handled payments, and maintained stock and store displays.</p>
+            <p>
+                <img src="images/experience/hairalyze.png" id="hairalyze">
+                <strong>Data Analyst Intern – Hairalyze</strong> (June 2025 - Present, Hillsborough, NJ)<br>
+                Marketing and user behavior data were analyzed to identify outreach inefficiencies and trending feature demands, resulting in over a 30% improvement in user engagement. Industry-standard tools such as Python, SQL, and Excel were utilized to generate actionable insights for both the marketing and mobile development teams. Weekly reports and visualizations were delivered to support strategic decision-making in a fast-paced, AI-driven startup environment.
+            </p>
+            <p>
+                <img src="images/school/rutgers_university.svg" class="logo">
+                <strong>Office Assistant – Rutgers University</strong> (Sep 2023 – Present, New Brunswick, NJ)<br>
+                Supported daily operations, managed 30+ communications/tasks, and improved filing system speed by 40%. Oversaw inventory and purchasing processes to improve efficiency.
+            </p>
+            <p>
+                <img src="images/experience/shoprite.svg" class="logo">
+                <strong>Shop from Home Clerk – Shoprite of English Creek</strong> (Jun 2021 – Sep 2021, Egg Harbor Township, NJ)<br>
+                Processed and fulfilled online orders, served 50+ customers daily, handled payments, and maintained stock and store displays.
+            </p>
+        </section>
+
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="swiper projectsSwiper">
+                <div class="swiper-wrapper" id="projects-wrapper"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section id="leadership">
+            <h2>Leadership</h2>
+            <p>
+                <img src="images/experience/rutgers_bengali_student_association.png" id="bengaliStudentAssociation">
+                <strong>Treasurer – Bengali Student Association</strong> (May 2025 – Present, New Brunswick, NJ)<br>
+                Manage a $15,000+ annual budget, process reimbursements, and coordinate event funding.
+            </p>
+            <p>
+                <strong>Fundraiser Chair – Bengali Student Association</strong> (Sep 2023 – May 2025)<br>
+                Organized 5+ fundraising events, built sponsor partnerships, and increased event turnout by 30%.
+            </p>
         </section>
 
         <section id="certifications">
             <h2>Certifications</h2>
             <ul>
-                <li>Google Data Analytics Professional Certificate – In Progress</li>
-                <li>IBM Data Science – Planned</li>
-                <li>SQL for Programmers – In Progress</li>
                 <li>Bloomberg Finance Fundamentals Certificate</li>
                 <li>Bloomberg Market Concepts Certificate</li>
                 <li>Bloomberg Environmental Social Governance Certificate</li>
@@ -68,72 +112,74 @@
             </ul>
         </section>
 
-        <section id="leadership">
-            <h2>Leadership</h2>
-            <p><strong>Treasurer – Bengali Student Association</strong> (May 2025 – Present, New Brunswick, NJ)<br>
-            Manage a $15,000+ annual budget, process reimbursements, and coordinate event funding.</p>
-            <p><strong>Fundraiser Chair – Bengali Student Association</strong> (Sep 2023 – May 2025)<br>
-            Organized 5+ fundraising events, built sponsor partnerships, and increased event turnout by 30%.</p>
-        </section>
-
         <section id="skills">
             <div id="skillsChart"> 
                 <h2 style="text-align: center;">My Skills</h2>
                 <br>
-                <div id="skillsChartMainDIV">
 
-                    <!-- Programming Languages -->
+                <div id="skillsChartMainDIV">
                     <div class="skillsChartContainers">
                         <h3>Programming Languages</h3>
                         <div class="individualSkillsTypeContainer">
-                            <img src="https://cdn.iconscout.com/icon/free/png-256/free-python-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-226051.png?f=webp&amp;w=256" title="Python" width="40">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/800px-R_logo.svg.png" title="R" width="40">
-                            <img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" title="Git" width="40">
-                            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" title="HTML" width="40">
-                            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" title="CSS" width="40">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfHAL9lwC3v52oaow4glc74V_u068ns3h2tg&amp;s" title="SQL" width="40">
+                            <img src="images/programming_languages/python.webp" class="programmingLanguages" title="Python">
+                            <img src="images/programming_languages/r.png" class="programmingLanguages" title="R">
+                            <img src="images/programming_languages/git.svg" class="programmingLanguages" title="Git">
+                            <img src="images/programming_languages/html5.webp" class="programmingLanguages" title="HTML">
+                            <img src="images/programming_languages/css3.webp" class="programmingLanguages" title="CSS">
+                            <img src="images/programming_languages/sql.png" class="programmingLanguages" title="SQL">
                         </div>
                     </div>
 
-                    <!-- Databases -->
                     <div class="skillsChartContainers">
                         <h3>Databases</h3>
                         <div class="individualSkillsTypeContainer">
-                            <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" title="MySQL" width="60">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png" title="PostgreSQL" width="40">
-                            <img src="https://brandlogos.net/wp-content/uploads/2022/02/sqlite-logo-brandlogo.net_-512x512.png" title="SQLite" width="60">
-                            <img src="https://logos-world.net/wp-content/uploads/2021/10/Tableau-Emblem.png" title="Tableau" width="45">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/2048px-New_Power_BI_Logo.svg.png" title="Microsoft PowerBi" width="40">
+                            <img src="images/databases/my_sql.svg" class="databases" title="MySQL">
+                            <img src="images/databases/postgresql.png" class="databases" id="postgreSQL" title="PostgreSQL">
+                            <img src="images/databases/sqlite.png" class="databases" title="SQLite">
+                            <img src="images/databases/tableau.png" class="databases" title="Tableau">
+                            <img src="images/databases/microsoft_power_bi.png" class="databases" id="microsoftPowerBi" title="Microsoft PowerBi">
                         </div>
                     </div>
 
-                    <!-- Cloud Platforms -->
                     <div class="skillsChartContainers">
                         <h3>Cloud Platforms</h3>
                         <div class="individualSkillsTypeContainer">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png" title="Amazon Web Services" width="40">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/2048px-Microsoft_Azure.svg.png" title="Microsoft Azure" width="40">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeIFPCKXuKwsldtC_JjKas0N3hEoLpq14Ttw&amp;s" title="Oracle Cloud" width="60">
+                            <img src="images/cloud/amazon_web_services.svg" class="cloudPlatforms" id="aws" title="Amazon Web Services">
+                            <img src="images/cloud/microsoft_azure.png" class="cloudPlatforms" title="Microsoft Azure">
+                            <img src="images/cloud/oracle.png" class="cloudPlatforms" id="oci" title="Oracle Cloud">
                         </div>
                     </div>
 
-                    <!-- Developer Tools -->
                     <div class="skillsChartContainers">
                         <h3>Developer Tools</h3>
                         <div class="individualSkillsTypeContainer">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" title="GitHub" width="40">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" title="Visual Studio Code" width="40">
+                            <img src="images/developer_tools/github.svg" class="developerTools" title="GitHub">
+                            <img src="images/developer_tools/visual_studio_code.svg" class="developerTools" title="Visual Studio Code">
                         </div>
                     </div>
 
-                    <!-- Languages -->
+                    <div class="skillsChartContainers">
+                        <h3>Operating Systems</h3>
+                        <div class="individualSkillsTypeContainer">
+                            <img src="images/operating_systems/windows.png" class="operatingSystems" title="Windows">
+                            <img src="images/operating_systems/macOS.png" class="operatingSystems" id="macOS" title="macOS">
+                            <img src="images/operating_systems/linux.jpeg" class="operatingSystems" title="GNU/Linux">
+                            <img src="images/operating_systems/arch_linux.svg" class="operatingSystems" id="archLinux" title="Arch Linux">
+                            <img src="images/operating_systems/debian.svg" class="operatingSystems" id="debian" title="Debian">
+                            <img src="images/operating_systems/ubuntu.svg" class="operatingSystems" id="ubuntu" title="Ubuntu">
+                            <img src="images/operating_systems/fedora.svg" class="operatingSystems" id="fedora" title="Fedora">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/Raspberry_Pi_Logo.svg/2560px-Raspberry_Pi_Logo.svg.png" class="operatingSystems" title="Raspberry Pi OS">
+                            <img src="images/operating_systems/linux_mint.svg" class="operatingSystems" id="linuxMint" title="Linux Mint">
+                        </div>
+                    </div>
+
                     <div class="skillsChartContainers">
                         <h3>Languages</h3>
                         <div class="individualSkillsTypeContainer">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/2560px-Flag_of_the_United_States.svg.png" title="English" width="40">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/2560px-Flag_of_Bangladesh.svg.png" title="Bengali" width="40">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/2560px-Flag_of_India.svg.png" title="Hindi" width="40">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/1280px-Flag_of_Pakistan.svg.png" title="Urdu" width="40">
+                            <img src="images/languages/united_states_of_america.svg" class="languages" id="unitedStatesOfAmerica" title="English">
+                            <img src="images/languages/bangladesh.svg" class="languages" id="bangladesh" title="Bengali">
+                            <img src="images/languages/india.svg" class="languages" title="Hindi">
+                            <img src="images/languages/pakistan.png" class="languages" title="Urdu">
                         </div>
                     </div>
                 </div>
@@ -144,28 +190,25 @@
         <br>
         <br>
 
-        <section id="resume">
-          <div class="resume-container">
-            <div class="resume-item">
-              <h3 style="text-align: center;"><b>Resume</b></h3>
-              <iframe src="https://drive.google.com/file/d/1E1X6Q59JPQZNWwSjsDcUQU1v55lVhWjeu5ovFmVIiBA/preview" class="resume-frame"></iframe>
-              <div class="download-button">
-                <a href="https://drive.google.com/u/0/uc?id=1E1X6Q59JPQZNWwSjsDcUQU1v55lVhWjeu5ovFmVIiBA&export=download" target="_blank" class="black-button">Download Resume</a>
-              </div>
+        <section id="résumé">
+          <div class="résumé-container">
+            <div class="résumé-item">
+            <h3 style="text-align: center;"><b>Résumé</b></h3>
+                <iframe src="https://drive.google.com/file/d/1E1X6Q59JPQZNWwSjsDcUQU1v55lVhWjeu5ovFmVIiBA/preview" class="résumé-frame"></iframe>
+                <div class="download-button">
+                <a href="https://drive.google.com/u/0/uc?id=1E1X6Q59JPQZNWwSjsDcUQU1v55lVhWjeu5ovFmVIiBA&export=download" target="_blank" class="black-button">Download Résumé</a>
+                </div>
             </div>
-            <div class="resume-item">
-              <h3 style="text-align: center;"><b>Curriculum Vitae (CV)</b></h3>
-              <iframe src="https://drive.google.com/file/d/1E1X6Q59JPQZNWwSjsDcUQU1v55lVhWjeu5ovFmVIiBA/preview" class="resume-frame"></iframe>
-              <div class="download-button">
-                <a href="https://drive.google.com/u/0/uc?id=1E1X6Q59JPQZNWwSjsDcUQU1v55lVhWjeu5ovFmVIiBA&export=download" target="_blank" class="black-button">Download CV</a>
-              </div>
+            <div class="résumé-item">
+                <h3 style="text-align: center;"><b>Curriculum Vitae (CV)</b></h3>
+                <iframe src="https://drive.google.com/file/d/1E1X6Q59JPQZNWwSjsDcUQU1v55lVhWjeu5ovFmVIiBA/preview" class="résumé-frame"></iframe>
+                <div class="download-button">
+                    <a href="https://drive.google.com/u/0/uc?id=1E1X6Q59JPQZNWwSjsDcUQU1v55lVhWjeu5ovFmVIiBA&export=download" target="_blank" class="black-button">Download CV</a>
+                </div>
             </div>
           </div>
         </section>
 
-        <section id="contact">
-
-        </section>
         <footer>
             <div class="footer-container">      
                 <div class="footer-left" id="contactContainer">
@@ -193,5 +236,12 @@
                 </div>
             </div>
         </footer>
+        
+        <!-- DISCLAIMER: GENERATED BY AI-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Auto-populate slideshow -->
+        <script src="github_autopopulation_script.js"></script>
     </body>
 </html>
