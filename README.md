@@ -19,7 +19,6 @@ This website was originally planned as part of my Summer 2025 **Education and Co
 ## 🧠 Future Plans
 
 - Optimize website for mobile and tablet use
-- 404 page
 - Animated Introduction Screen
 
 ## 🌐 Live Website
