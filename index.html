@@ -212,6 +212,27 @@
           </div>
         </section>
 
+        <!-- Floating Chat Widget -->
+        <div id="chat-widget">
+          <button id="chat-toggle" aria-label="Toggle Chat">💬</button>
+
+          <div id="chat-window" class="hidden">
+            <div id="chat-header">
+              Ask Oheen's Personal GPT <span id="chat-close" style="cursor:pointer;">✖</span>
+            </div>
+
+            <div id="chat-body">
+              <div id="chat-messages"></div>
+
+              <div id="chat-input-row">
+                <input id="chat-input" type="text" placeholder="Type your question…" />
+                <button id="chat-send" type="button">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="chatgpt.js"></script>
+
         <footer>
             <div class="footer-container">      
                 <div class="footer-left" id="contactContainer">
@@ -234,7 +255,6 @@
                          data-vanity="oheenrahman"
                          data-version="v1">
                         <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/oheenrahman?trk=profile-badge"></a>
-                        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
                     </div>
                 </div>
             </div>
@@ -243,5 +263,6 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css" />
         <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
         <script src="github_autopopulation_script.js"></script>
+        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
     </body>
 </html>
