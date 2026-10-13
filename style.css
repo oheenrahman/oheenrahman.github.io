@@ -616,3 +616,105 @@ footer {
   font-weight: 700;
   cursor: pointer;
 }
+
+/* Resume downloads are primary; previews are optional. */
+.resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin: 24px 0;
+}
+.resume-download {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 8px;
+  background: #f6fff9;
+  color: #172b24;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+.resume-download:hover { background: #d5efdf; }
+.resume-secondary { color: #f6fff9; text-underline-offset: 4px; }
+.resume-download:focus-visible,
+.resume-secondary:focus-visible,
+.resume-preview summary:focus-visible {
+  outline: 3px solid #a5d6a7;
+  outline-offset: 5px;
+}
+.resume-preview {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid #78908e;
+  border-radius: 8px;
+}
+.resume-preview summary { cursor: pointer; font-weight: 600; }
+.resume-frame {
+  display: block;
+  width: 100%;
+  height: min(75vh, 850px);
+  min-height: 320px;
+  border: 0;
+  margin-top: 16px;
+  background: white;
+}
+@media (max-width: 600px) {
+  .resume-actions { align-items: stretch; flex-direction: column; }
+  .resume-download { box-sizing: border-box; width: 100%; }
+  .resume-secondary { text-align: center; padding: 8px; }
+}
+/* Compact project cards with a stable fallback for unavailable GitHub images. */
+.projectsSwiper {
+  box-sizing: border-box;
+  margin-top: 24px;
+  padding: 8px 48px 40px;
+  --swiper-navigation-size: 28px;
+  --swiper-navigation-color: #f6fff9;
+  --swiper-pagination-color: #f6fff9;
+}
+.projectsSwiper .swiper-slide { height: auto; }
+.project-card {
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #78908e;
+  border-radius: 16px;
+  background: #26383f;
+}
+.project-media {
+  height: clamp(150px, 24vw, 230px);
+  overflow: hidden;
+  border-radius: 10px;
+  background: #172b34;
+}
+.projectsSwiper .project-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  box-shadow: none;
+  border-radius: 0;
+}
+.project-image-fallback {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  color: #d5efdf;
+  background: linear-gradient(135deg, #172b34, #315e55);
+}
+.project-symbol { font-size: 48px; font-weight: 700; }
+.projectsSwiper [hidden] { display: none !important; }
+.project-card h3 { margin: 18px 0 8px; overflow-wrap: anywhere; }
+.project-card p { margin: 0 0 16px; }
+.project-card a, .project-load-message a { color: #a5e5cc; }
+.projectsSwiper .swiper-button-prev,
+.projectsSwiper .swiper-button-next { color: #f6fff9; }
+.projectsSwiper .swiper-pagination-bullet-active { background: #f6fff9; }
+@media (max-width: 600px) {
+  .projectsSwiper { padding: 8px 30px 36px; }
+  .project-card { padding: 14px; }
+  .projectsSwiper { --swiper-navigation-size: 20px; }
+}
